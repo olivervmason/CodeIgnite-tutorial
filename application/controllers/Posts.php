@@ -15,16 +15,18 @@
         }
 
         public function view($slug = null){
-            $data['post'] = $this->post_model->get_posts($slug);
-        
+            $data['post'] = $this->post_model->get_posts();     // ($slug) missing
+            
             // if (empty($data['post'])){
             //     show_404();
             // }
 
-            $data['title'] = $data['post']['title'];
-        
-            // $this->load->view('templates/header', $data);
+            // $data['title'] = $data['post']['title'];
+            // $data['body'] = $data['post']['body'];
+            print_r($data['post']); 
+
+            $this->load->view('templates/header', $data);
             $this->load->view('posts/view', $data);
-            // $this->load->view('templates/footer', $data);
+            $this->load->view('templates/footer', $data);
         }
     }
