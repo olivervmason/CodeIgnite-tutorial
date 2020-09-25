@@ -21,7 +21,7 @@
             //     show_404();
             // }
 
-            // $data['title'] = $data['post']['title'];
+            $data['title'] = $data['post']['title'];
             // $data['body'] = $data['post']['body'];
             print_r($data['post']); 
 
