@@ -47,4 +47,10 @@
                 redirect('posts');
             }
         }
+
+        public function delete($id){
+            // echo $id;        // Log on to posts/delete/$id to check function is executing;
+            $this->post_model->delete_post($id);    // Calls delete post method in Post Model;
+            redirect('posts');
+        }
     }
