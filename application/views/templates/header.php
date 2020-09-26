@@ -3,6 +3,7 @@
         <title>Blog header</title>
         <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.css" >
         <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css" >
+        <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
     </head>
 
     <body>
