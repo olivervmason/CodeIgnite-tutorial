@@ -19,6 +19,9 @@
                     </ul>
                 </div>   
             </div>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="btn btn-secondary my-2 my-sm-0" href="<?php echo base_url(); ?>create">Create Post</a>
+            </form>
         </div>
     </nav>
 
