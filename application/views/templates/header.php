@@ -9,7 +9,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">        
         <div class="container">
-            <div class="navbar-header">
+            <div class= "navbar-header">
                 <h1><a class="navbar-brand" href="/codeigniter"> CodeIgniter Blog</a></h1>
                 <div id="navbar">
                     <ul class="navbar-nav mr-auto">
