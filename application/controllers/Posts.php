@@ -22,8 +22,7 @@
             // }
 
             $data['title'] = $data['post']['title'];
-            // $data['body'] = $data['post']['body'];
-            print_r($data['post']); 
+            // print_r($data['title']); 
 
             $this->load->view('templates/header', $data);
             $this->load->view('posts/view', $data);
