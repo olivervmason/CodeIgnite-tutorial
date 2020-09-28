@@ -45,7 +45,28 @@
                 $this->load->view('templates/footer', $data);
             } else {
             // when criteria met, create post and redirect back to main posts page;
-                $this->post_model->create_post();
+                // Upload Image
+                $config['upload_path'] = './assets/images/posts';
+                $config['allowed_types'] = 'gif|jpg|png';
+				$config['max_size'] = '2048';
+				$config['max_width'] = '2000';
+				$config['max_height'] = '2000';
+
+				$this->load->library('upload', $config);
+
+				if(!$this->upload->do_upload()){                     
+					$errors = array('error' => $this->upload->display_errors());
+                    $post_image = 'noimage.jpg';
+                    // echo "do_upload has an error here!";
+                    /* This evaluates to false instead of true, see line 377 of file
+                    below - need to set variable $_FILES[$field]:
+                    /system/libraries/Upload.php
+                    */ 
+				} else {
+					$data = array('upload_data' => $this->upload->data());
+                    $post_image = $_FILES['userfile']['name'];
+				}
+                $this->post_model->create_post($post_image);
                 redirect('posts');
             }
         }
