@@ -8,7 +8,7 @@
         public function get_posts($slug = false){
             if($slug === false){
                 $this->db->order_by('posts.id', 'DESC');
-                $this->db->join('categories', 'category_id = posts.category_id');
+				$this->db->join('categories', 'categories.id = posts.category_id');
                 $query = $this->db->get('posts');
                 return $query->result_array();
             }
