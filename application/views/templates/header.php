@@ -8,7 +8,7 @@
 
     <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">        
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <div class= "navbar-header">
                 <h1><a class="navbar-brand" href="/codeigniter"> CodeIgniter Blog</a></h1>
@@ -18,10 +18,15 @@
                         <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>about">About</a></li>
                         <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>posts">Posts</a></li>
                     </ul>
-                </div>   
+                </div>
             </div>
             <form class="form-inline my-2 my-lg-0">
-                <a class="btn btn-secondary my-2 my-sm-0" href="<?php echo base_url('/posts/'); ?>create">Create Post</a>
+                <li>
+                    <a class="btn btn-secondary my-2 my-sm-0" href="<?php echo base_url('/categories/'); ?>create">Create Category</a>
+                </li>
+                <li>
+                    <a class="btn btn-secondary my-2 my-sm-0" href="<?php echo base_url('/posts/'); ?>create">Create Post</a>
+                </li>
             </form>
         </div>
     </nav>
