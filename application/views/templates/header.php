@@ -16,7 +16,8 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>"> Home</a></li>
                         <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>about">About</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>posts">Posts</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>posts">All Posts</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo base_url(); ?>categories">Posts by Category</a></li>
                     </ul>
                 </div>
             </div>
